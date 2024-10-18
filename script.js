@@ -71,7 +71,6 @@ function initCarousel() {
             clearInterval(autoSlide);
             currentIndex = index;
             activateSlide(currentIndex);
-
             autoSlide = setInterval(nextSlide, slideInterval);
         });
     });
