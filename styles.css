@@ -172,3 +172,38 @@ html {
   z-index: 5;
   pointer-events: none;
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }
+
+  .text-container {
+    left: 10px; 
+    right: 10px; 
+  }
+}
+
+@media (max-width: 800px) {
+  .horizontal-line {
+    position: absolute;
+    top: 31%;
+    width: 5%;
+    height: 2px;
+    background-color: #21e26e;
+    bottom: 620px;
+  }
+}
