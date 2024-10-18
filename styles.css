@@ -185,9 +185,9 @@ html {
 
 .horizontal-line {
   position: absolute;
-  top: 31%; /* Um pouco acima do meio da tela */
-  width: 100px; /* Tamanho pequeno */
-  height: 2px; /* Altura da linha */
-  background-color: green; /* Cor verde */
+  top: 31%;
+  width: 100px;
+  height: 2px;
+  background-color: green;
   bottom: 620px;
 }
