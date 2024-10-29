@@ -48,7 +48,7 @@ function generateSlides() {
 function initCarousel() {
     const slides = Array.from(document.querySelectorAll('.slide'));
     let currentIndex = 0;
-    const slideInterval = 225000;
+    const slideInterval = 5000;
 
     function activateSlide(index) {
         slides.forEach((s, i) => {
@@ -60,7 +60,7 @@ function initCarousel() {
         slides[index].classList.add('active');
         setTimeout(() => {
             slides[index].querySelector('.text-container').style.opacity = '1';
-        }, 1000);
+        }, 300);
     }
     
 
