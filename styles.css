@@ -108,7 +108,7 @@ html {
 .button-container {
   display: flex;
   justify-content: left;
-  margin-top: 20px;
+  margin-top: 60%;
   margin-bottom: 200px;
 }
 
@@ -214,10 +214,27 @@ html {
   pointer-events: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
+  .description {
+    font-family: "Poppins", Medium;
+    font-size: 3.4rem;
+    margin-bottom: 31px;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 16px #0000005c;
+    opacity: 1;
+  }
+
+  .button-container {
+    margin-top: 65%;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 812px) {
+  .description {
+    font-size: 50px;
+  }
+
   .horizontal-line {
     position: absolute;
     top: 31%;
@@ -225,6 +242,12 @@ html {
     height: 2px;
     background-color: #21e26e;
     bottom: 620px;
+  }
+}
+
+@media (max-width: 745px) {
+  .description {
+    font-size: 45px;
   }
 }
 
@@ -277,6 +300,10 @@ html {
     left: 120px;
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  .button-container {
+    margin-top: 100%;
   }
 
   .btn {

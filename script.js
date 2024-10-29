@@ -34,10 +34,6 @@ function generateSlides() {
                 <span class="title">${slide.title}</span>
                 <br>
                 <span class="description">${slide.description}</span>
-                <div class="button-container">
-                    <button class="btn" aria-label="Ver produtos de ${slide.title.toLowerCase()}">Produtos</button>
-                    <button class="btn" aria-label="Saiba mais sobre ${slide.title.toLowerCase()}">Saiba mais</button>
-                </div>
             </div>
         `;
 
