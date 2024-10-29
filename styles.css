@@ -50,8 +50,10 @@ html {
   text-align: left;
   color: #fff;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.5s ease-in;
   z-index: 10;
+  min-height: 500px;
+  min-width: 600px;
 }
 
 .slide.active .text-container {
@@ -176,7 +178,7 @@ html {
   pointer-events: none;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
   .title {
     font-size: 20px;
@@ -210,4 +212,4 @@ html {
     background-color: #21e26e;
     bottom: 620px;
   }
-}
+} */
