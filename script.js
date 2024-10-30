@@ -34,10 +34,6 @@ function generateSlides() {
                 <span class="title">${slide.title}</span>
                 <br>
                 <span class="description">${slide.description}</span>
-                <div class="button-container">
-                    <button class="btn" aria-label="Ver produtos de ${slide.title.toLowerCase()}">Produtos</button>
-                    <button class="btn" aria-label="Saiba mais sobre ${slide.title.toLowerCase()}">Saiba mais</button>
-                </div>
             </div>
         `;
 
@@ -53,11 +49,16 @@ function initCarousel() {
     function activateSlide(index) {
         slides.forEach((s, i) => {
             s.classList.remove('active');
+            s.querySelector('.text-container').style.opacity = '0';
             s.querySelector('.number').classList.remove('active-number');
         });
+    
         slides[index].classList.add('active');
-        slides[index].querySelector('.number').classList.add('active-number');
+        setTimeout(() => {
+            slides[index].querySelector('.text-container').style.opacity = '1';
+        }, 300);
     }
+    
 
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
